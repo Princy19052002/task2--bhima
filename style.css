@@ -1,0 +1,242 @@
+/* Navbar */
+
+@media (max-width: 991.98px) {
+  /* Bootstrap's md breakpoint */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #f8f9fa;
+    padding: 0px 15px;
+  }
+}
+.navbar {
+  z-index: 1020;
+}
+
+/* First Section */
+
+.First-section {
+  width: 100%;
+  height: calc(100vh - 96px);
+  background-image: url("images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  color: white;
+  padding-top: 150px;
+  margin-top: 96px;
+  display: flex;
+  align-items: center;
+}
+
+.First-title {
+  font-size: 2rem;
+}
+
+.First-title span {
+  font-size: 3rem;
+  color: #f7931d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .First-title {
+    font-size: 1.8rem;
+  }
+
+  .First-title span {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .First-section {
+    padding-top: 100px;
+  }
+
+  .First-title {
+    font-size: 1.6rem;
+  }
+
+  .First-title span {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .First-section {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px; /* Add padding at the bottom for smaller screens */
+  }
+
+  .First-title {
+    font-size: 1.4rem;
+  }
+
+  .First-title span {
+    font-size: 2rem;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .btn.orange-border {
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .First-title {
+    font-size: 1.2rem;
+  }
+
+  .First-title span {
+    font-size: 1.8rem;
+  }
+
+  .First-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* Button */
+.orange-border {
+  border-color: #f7931d;
+  color: #f7931d;
+}
+
+.orange-border:hover {
+  border-color: #f7931d;
+  background-color: #f7931d;
+  color: #fff;
+}
+
+.btn-outline-secondary {
+  border-color: #23222249;
+  color: #23222249;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f7931d;
+  color: #fff;
+  border: none;
+}
+
+/* About Section */
+.about-section {
+  width: 100%;
+  background-image: url("images/home-about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 110px 0;
+}
+
+.about-section p {
+  font-family: "Droid Serif", serif;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .col-md-6 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 96px 15px;
+  }
+}
+
+/* Gold Section */
+.gold-section {
+  width: 100%;
+  background-image: url("images/2.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 150px 0;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .gold-section {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .gold-section {
+    padding: 10px 0;
+  }
+}
+
+/* Stone Section */
+.stones {
+  padding: 10px 0;
+}
+
+.stones p {
+  color: #333333;
+  font-family: "Droid Serif", serif;
+}
+
+@media (min-width: 768px) {
+  .border-right-md {
+    border-right: 1px solid #23222249 !important; /* Add !important if needed */
+  }
+}
+
+/* grid  */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.border-right-md {
+  border-right: 1px solid #ddd;
+}
+
+@media (max-width: 767.98px) {
+  .border-right-md {
+    border-right: none;
+  }
+}
+
+/* Newsletter section */
+.newsletter {
+  background-color: #341c00;
+}
+
+.leftsection-footer ul {
+  margin: 0;
+  padding: 0;
+}
+.leftsection-footer a {
+  text-decoration: none;
+  color: #646464;
+}
+.leftsection-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .leftsection-footer a {
+    font-size: 0.9rem;
+  }
+}
